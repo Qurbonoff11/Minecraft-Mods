@@ -1,0 +1,25 @@
+{
+  "name": "minecraft-mods",
+  "version": "1.0.0",
+  "description": "Minecraft Mods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qurbonoff11/Minecraft-Mods.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Qurbonoff11/Minecraft-Mods/issues"
+  },
+  "homepage": "https://github.com/Qurbonoff11/Minecraft-Mods#readme",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  }
+}
