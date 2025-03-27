@@ -1,7 +1,11 @@
+@use './roots' as *;
+@use './mixins';
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    // font-family: $roboto;
 }
 
 ul,
@@ -12,4 +16,16 @@ ol{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    // margin-top: 5rem;
+    @include mixins.flexBox(center, center, column, nowrap, 0);
 }

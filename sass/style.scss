@@ -1,1 +1,5 @@
 @use './const';
+
+// LAYOUT
+@use './layout/components/header';
+@use './layout/main/heroSection';

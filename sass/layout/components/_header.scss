@@ -1,0 +1,41 @@
+@use '../../roots' as *;
+@use '../../mixins';
+
+.header{
+    width: 100%;
+    @include mixins.flexBox(center, center, row, nowrap, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .nav{
+        width: 100%;
+        padding: 1rem 0;
+        @include mixins.flexBox(space-between, center, row, nowrap, 0);
+        .nav__logo{
+            h1{
+                font-size: $fs-32;
+                font-family: $jersey;
+                font-weight: $fw-4;
+                color: $txt-darkgreen;
+            }
+        }
+        .nav__menu{
+            @include mixins.flexBox(space-between, center, row, nowrap, 0);
+            a{
+                font-size: $fs-16;
+                font-weight: $fw-5;
+                color: $txt-darkgreen;
+                font-family: $roboto;
+                padding: .5rem 1rem;
+                transition: .3s ease-in-out;
+                &:hover{
+                    @include mixins.button($bg-darkgreen, $txt-white, none, $br-5, .5rem 1rem, none);
+                }
+                i{
+                    font-size: $fs-20;
+                }
+            }
+        }
+    }
+}

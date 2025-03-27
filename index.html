@@ -5,11 +5,18 @@
     <!-- META Wiewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- REMIXICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- META Description -->
     <meta name="description" content="Minecraft Mods">
-
     <!-- META Keywords -->
     <meta name="keywords" content="Minecraft, Mods, Minecraft Mods, McMods">
+    <!-- META Author -->
+    <meta name="author" content="Qurbonov Jonibek">
 
     <!-- TITLE -->
     <title>McMods</title>
@@ -18,26 +25,94 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="">
+    <link rel="icon" href="./assets/img/MC-Logo.png" type="image/png">
 </head>
 <body>
 
     <!-- HEADER -->
-    <header>
-        <nav>
-            
+    <header class="header">
+        <nav class="nav container">
+            <a class="nav__logo" href="#">
+                <!-- <img src="./assets/img/MC-Logo.png" alt=""> -->
+                <h1>McMods</h1>
+            </a>
+            <ul class="nav__menu">
+                <li>
+                    <a href="#">
+                        <i class="ri-command-line"></i>
+                        <span>Mods</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-box-3-line"></i>
+                        <span>Resource Packs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-braces-line"></i>
+                        <span>Datapacks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-glasses-2-line"></i>
+                        <span>Shaders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-boxing-line"></i>
+                        <span>Modpacks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-plug-line"></i>
+                        <span>Plugins</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="main">
+        <section class="hero_section container">
+            <div>
+                <img src="./assets/img/MC-Logo.png" alt="The Minecraft Logo">
+            </div>
+            <div class="box">
+                <div id="container">
+                    <div>
+                        <h1>Minecraft</h1>
+                        <span id="text1"></span>
+                        <span id="text2"></span>
+                    </div>
+                    <p>
+                        Bu web sayt Minecraft o'yinchilari uchun modlar, resurs paketlar,
+                        datapaketlar, shaderlar, modpaketlar va plaginlar to'plamini taqdim etadi.
+                    </p>
+                </div>
 
+                <svg id="filters">
+                    <defs>
+                        <filter id="threshold">
+                            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
 
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
